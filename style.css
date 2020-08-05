@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat";
+}
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 60px;;
+}
+
+header p {
+ font-size: 20px;
+}
+
+.pads{
+    background: lightblue;
+    width: 100%;
+    display: flex;
+}
+
+.pads > div {
+    height: 100px;
+    width: 100px;
+    flex: 1;
+    cursor: pointer;
+}
+
+.pads:hover {
+    transform:rotate(0)
+}
+
+.pad1 {
+    background: #36b978;
+}
+.pad2 {
+    background: #6920df;
+}
+.pad3 {
+    background: #6e1e1e;
+}
+.pad4 {
+    background: #206fd8;
+}
+.pad5{
+    background: #b62222;
+}
+.pad6 {
+    background: #bd7d34;
+}
+
+@keyframes jump{
+    0%{
+        left: 0%;
+        top: 50%;
+    }
+    50%{
+        bottom: 47%;
+        left: 50%;
+            }
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
+.visual > div{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    bottom: 0%;
+    border-radius: 50%;
+    z-index: -1;
+
+
+}
+.polo{
+color: #ff6f6f;
+}
